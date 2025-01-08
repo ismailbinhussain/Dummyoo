@@ -1267,8 +1267,11 @@ START NODE      START WITH PIPELINE
 MASTER AND SLAVE:
 it is used to distribute the builds.
 it reduce the load on jenkins server.
-communication blw master and slave is ssh.
-Here we need to install agent (java-11).
+communication blw master and slave is ssh. (ssh is responsible to connect to servers [portno.22])
+the fullform of ssh is secure shell or secure socket host.
+Here we need to install agent (java-11). 
+agent means the software which you are installing on the worker node or slave server.
+without installing the agent your slave will not be able to communicate with the jenkins server.
 slave can use any platform.
 label = way of assingning work for slave.
 
